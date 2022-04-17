@@ -1,0 +1,44 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1645722594722",
+      "Action": [
+        "lambda:GetAccountSettings",
+        "lambda:GetAlias",
+        "lambda:GetCodeSigningConfig",
+        "lambda:GetEventSourceMapping",
+        "lambda:GetFunction",
+        "lambda:GetFunctionCodeSigningConfig",
+        "lambda:GetFunctionConcurrency",
+        "lambda:GetFunctionConfiguration",
+        "lambda:GetFunctionEventInvokeConfig",
+        "lambda:GetLayerVersion",
+        "lambda:GetLayerVersionPolicy",
+        "lambda:GetPolicy",
+        "lambda:GetProvisionedConcurrencyConfig",
+        "lambda:ListAliases",
+        "lambda:ListCodeSigningConfigs",
+        "lambda:ListEventSourceMappings",
+        "lambda:ListFunctionEventInvokeConfigs",
+        "lambda:ListFunctions",
+        "lambda:ListFunctionsByCodeSigningConfig",
+        "lambda:ListLayerVersions",
+        "lambda:ListLayers",
+        "lambda:ListProvisionedConcurrencyConfigs",
+        "lambda:ListTags",
+        "lambda:ListVersionsByFunction"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": [
+            "ca-central-1",
+            "us-west-2"
+          ]
+        }
+      }
+    }
+  ]
+}

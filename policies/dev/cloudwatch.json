@@ -1,0 +1,37 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1630804637124",
+      "Action": [
+        "logs:DescribeDestinations",
+        "logs:DescribeExportTasks",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:DescribeMetricFilters",
+        "logs:DescribeQueries",
+        "logs:DescribeQueryDefinitions",
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeSubscriptionFilters",
+        "logs:FilterLogEvents",
+        "logs:GetLogDelivery",
+        "logs:GetLogEvents",
+        "logs:GetLogGroupFields",
+        "logs:GetLogRecord",
+        "logs:GetQueryResults",
+        "logs:ListLogDeliveries",
+        "logs:ListTagsLogGroup"
+      ],
+      "Effect": "Allow",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": [
+            "ca-central-1",
+            "us-west-2"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+config:
+  aws:profile: aws_profile
+  aws:region: ca-central-1
+  pulumi_aws_create_policies:generalTagName: demo
